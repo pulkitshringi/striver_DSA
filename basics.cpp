@@ -1,14 +1,14 @@
 // basics.cpp
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-int n;
-cout << "Enter n: ";
-cin >> n;
-int arr[n];
-for(int i =0;i<n;i++){
-    cin >> arr[i];
+
+void modify(int *arr){
+    arr[0]= arr[0]+5;
 }
-cout << arr[n]; // runtime error
+
+int main(){
+int arr[] = {10,12,14,3};
+modify(arr);
+cout << arr[0] << endl;
     return 0;
 }
